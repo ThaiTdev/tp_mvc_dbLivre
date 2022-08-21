@@ -1,0 +1,90 @@
+form {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: #de9d47;
+  text-shadow: 1px 1px 0px #fff;
+  font-weight: 100;
+}
+
+h1 span {
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+}
+.mail-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.pass-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input {
+  width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  border-radius: 4px;
+  background: #e3e3e3;
+  color: #888;
+}
+.unmask {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: #de9d47;
+  border: none;
+}
+.active {
+  background-color: #7cde47;
+}
+
+.password + .unmask {
+  position: absolute;
+  right: 68px;
+  top: 7px;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background: #aaa;
+  border-radius: 50%;
+}
+.password + .unmask:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  width: 17px;
+  height: 17px;
+  background: #e3e3e3;
+  border-radius: 50%;
+}
+.password[type="text"] + .unmask:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 2;
+  width: 13px;
+  height: 13px;
+  background: #aaa;
+  border-radius: 50%;
+}

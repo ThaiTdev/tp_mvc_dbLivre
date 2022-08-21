@@ -1,0 +1,11 @@
+.box {
+  background-color: blanchedalmond;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  &__foot {
+    background-color: blue;
+    font-size: x-large;
+  }
+}
